@@ -1,0 +1,465 @@
+.madeUp{
+    width: 10rem;
+    background-color: red;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+    // color: #FFF;
+}
+.headerMain {
+    display: flex;
+    width: 75%;
+    .section {
+        margin: 20px;
+        width: 60px;
+    }
+}
+.latestCollection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+.rowSize{
+    display: flex;    
+    padding: 0px 0px 40px 0px !important;
+    border: 1px;
+    .pdtColSize{
+        width: 20%;
+        height: 360px;
+        top: 1622px;
+        left: 61px;
+    }
+}
+.mainImage{
+    position: relative;
+    width: 100%;
+    height: 680px;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 680px;
+        object-fit: cover;
+        object-position: 5% 20%;
+        top:-1px;
+    }
+    .imgInsideA{
+       display: flex;
+       background-color: #FFF;
+       font: caption;
+       position: absolute;
+       top: 50%;
+       left: 42%;
+       width: 184px;
+       height: 7%;
+       opacity: 90%;
+       padding: 5px;
+       align-items: center;
+       justify-content: center;
+       font-weight: 400;
+       font-size: 20px;
+       .imgInsideRed{
+        color: red;
+       }
+    }
+    .imgInsideB{
+        display: flex;
+       background-color: #FFF;
+       font: caption;
+       position: absolute;
+       top: 58%;
+       left: 42%;
+       width: 184px;
+       height: 7%;
+       opacity: 90%;
+       padding: 5px;
+       align-items: center;
+       justify-content: center;
+       font-weight: 400;
+       font-size: 20px;
+       .imgInsideRed{
+        color: red;
+       }
+    }
+    .collections{
+        width: 240px;
+        height: 8%;
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        background-color: #E10000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.middleRow{
+  display: flex;
+  justify-content: center;
+  height: 740px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.5rem;
+  position: relative;
+  .midColumn1{
+    width: 50%;
+  }
+  .columnImgOne{
+    width: 100%;
+    height: 740px;
+  }
+  .columnImgTwo{
+    width: 100%;
+    height: 365px;
+  }
+  .columnImgThree{
+    width: 100%;
+    height: 365px;
+    object-fit: cover;
+  }
+  .imageTextFlex{
+    display: block;
+    align-items: center;
+  }
+  .midImage1A{
+    display: flex;
+    background-color: #FFF;
+    font: caption;
+    position: absolute;
+    top: 49%;
+    left: 15%;
+    width: max-content;
+    height: 5%;
+    opacity: 90%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    .midImage1Red{
+     color: red;
+    }
+ }
+ .midImage1B{
+     display: flex;
+    background-color: #FFF;
+    font: caption;
+    position: absolute;
+    top: 55%;
+    left: 15%;
+    width: max-content;
+    height: 5%;
+    opacity: 90%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    .midImage1Red{
+        color: red;
+       }
+ }
+ 
+ .midImage2A{
+    display: flex;
+    background-color: #FFF;
+    font: caption;
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    width: max-content;
+    height: 5%;
+    opacity: 90%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    .midImage2Red{
+     color: red;
+    }
+ }
+ .midImage3A{
+    display: flex;
+    background-color: #FFF;
+    font: caption;
+    position: absolute;
+    top: 74%;
+    right: 15%;
+    width: max-content;
+    height: 5%;
+    opacity: 90%;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 10px;
+    .midImage3Red{
+     color: red;
+    }
+ }
+}
+.headerIcons{
+    width: 25%;
+    display: flex;
+    justify-content: end;
+    img {
+        width: 15%;
+        height: 15%;
+        margin-right: 20px;
+    }
+    .cartContainer{
+        cursor: pointer;
+        position: relative;
+        display: inline-block;
+        width: 18%;
+        margin-right: 20px;
+        .cart-count {
+            position: absolute;
+            bottom: -5px; /* subscript-style position */
+            right: -5px;
+            font-size: 0.7rem;
+            background: red;
+            color: white;
+            padding: 2px 5px;
+            border-radius: 50%;
+            font-weight: bold;
+          }
+          img {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: -10px;
+        }
+    }
+    .profileIcon {
+        cursor: pointer;
+    }
+}
+
+@media only screen and (max-width: 997px) {
+    .headerMain {
+        width: 85%;
+
+        .section {
+            width: 15%;
+            margin: 0px 5px;
+        }
+    }
+    .mainImage {
+        height: 642px;
+        .imgInsideA {
+            display: flex;
+            background-color: #FFF;
+            font: caption;
+            position: absolute;
+            top: 31%;
+            left: 32%;
+            width: 120px;
+            height: 20px;
+            opacity: 90%;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 10px;
+
+            .imgInsideRed {
+                color: red;
+            }
+        }
+
+        .imgInsideB {
+            display: flex;
+            background-color: #FFF;
+            font: caption;
+            position: absolute;
+            top: 35%;
+            left: 32%;
+            width: 120px;
+            height: 20px;
+            opacity: 90%;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 10px;
+
+            .imgInsideRed {
+                color: red;
+            }
+        }
+
+        .collections {
+            width: fit-content;
+            padding: 5px;
+            height: 30px;
+            position: absolute;
+            top: 45%;
+            left: 30%;
+            background-color: #E10000;
+            color: white;
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+            justify-content: center;
+        }
+
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 52% 20%;
+            top: -1px;
+        }
+    }
+    .middleRowMob {
+        width: 100%;
+        position: relative;
+        height: 100%;
+
+        .columnImgOne {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .midImage1A {
+            display: flex;
+            background-color: #FFF;
+            font: caption;
+            position: absolute;
+            top: 12%;
+            left: 35%;
+            width: max-content;
+            height: 20px;
+            opacity: 90%;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 10px;
+
+            .midImage1Red {
+                color: red;
+            }
+        }
+
+        .midImage1B {
+            display: flex;
+            background-color: #FFF;
+            font: caption;
+            position: absolute;
+            top: 14%;
+            left: 35%;
+            width: max-content;
+            height: 20px;
+            opacity: 90%;
+            padding: 5px;
+            align-items: center;
+            justify-content: center;
+            font-weight: 400;
+            font-size: 10px;
+
+            .midImage1Red {
+                color: red;
+            }
+        }
+
+        .thinkerImg {
+            height: 533px;
+            position: relative;
+            object-fit: cover;
+
+            .columnImgTwo {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .midImage2A {
+                display: flex;
+                background-color: #FFF;
+                font: caption;
+                position: absolute;
+                top: 45%;
+                right: 35%;
+                width: max-content;
+                height: 20px;
+                opacity: 90%;
+                padding: 5px;
+                align-items: center;
+                justify-content: center;
+                font-weight: 400;
+                font-size: 9px;
+                padding: 10px;
+
+                .midImage2Red {
+                    color: red;
+                }
+            }
+        }
+
+        .stainImg {
+            position: relative;
+
+            .columnImgThree {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .midImage3A {
+                display: flex;
+                background-color: #FFF;
+                font: caption;
+                position: absolute;
+                top: 40%;
+                right: 25%;
+                width: max-content;
+                height: 20px;
+                opacity: 90%;
+                padding: 5px;
+                align-items: center;
+                justify-content: center;
+                font-weight: 400;
+                font-size: 10px;
+                padding: 10px;
+
+                .midImage3Red {
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767.9px) {
+    .rowSize{
+        display: block;
+        height: 100%;
+        border: 1px;
+        .pdtColSize{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 997px) {
+    .rowSize{
+        display: flex;
+        height: 100%;
+        border: 1px;
+        .pdtColSize{
+            width: 100%;
+            height: max-content;
+        }
+    }
+}
