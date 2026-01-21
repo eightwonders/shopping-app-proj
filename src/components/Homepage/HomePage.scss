@@ -1,0 +1,196 @@
+.testimonialRow{
+    list-style: none;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    .eachUserCol{
+        margin: 20px 0px;
+    }
+}
+.testimonialsTitle {
+    margin: 0px;
+    text-align: center;
+    font-family: BankGothic;
+    font-weight: 500;
+    font-size: 24px;
+}
+.box{
+    width: 90%;
+    height: max-content;
+    margin: 10px;
+    padding: 15px;
+    position: relative;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    .firstRowTitle {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px
+    }
+    .rating {
+        svg {
+            padding: 1px;
+        }
+    }
+    .vikasImg {
+        position: absolute;
+        top: -30px;
+        left: -33px;
+        border-radius: 25px;
+        width: 50px;
+        height: 50px;
+    }
+    .userName {
+        font-size: 12px;
+    }
+    .description{
+        font-style: italic;
+        font-size: 12px;
+    }
+}
+
+.reachUsImg {
+    position: relative;
+    height: 360px;
+    img{
+        width: 100%;
+        height: 360px;
+        filter: brightness(50%);
+    }
+    .info {
+        position: absolute;
+        top: 34%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 24px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+    .newsLetter{
+        font-size: 20px;
+        font-weight: 400;
+        color: #FFFFFF;
+        position: absolute;
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    input {
+        position: absolute;
+        top: 57%;
+        left: 40%;
+        transform: translate(-50%, -50%);
+        width: 36%;
+        height: 38px;
+        background-color: #FFFFFF;
+    }
+    .redBtn{
+        background-color: red;
+        color: #FFFFFF;
+        position: absolute;
+        top: 57%;
+        left: 66%;
+        transform: translate(-50%, -50%);
+        width: 15%;
+        height: 38px;
+    }
+    .locateUs{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        justify-content: space-around;
+        border-radius: 10px 10px 0px 0px;
+        bottom: 0px;
+        right: 10px;
+        width: 150px;
+        height: 35px;
+        padding: 10px;
+        text-align: right;
+        background-color: #222222;
+        color: #DDDDDD;
+        img {
+            height: 20px;
+            width: 20px;
+            filter: invert(91%) sepia(4%);
+        }
+    }
+}
+.footer {
+    background-color: #222222;
+    color:#DDDDDD ;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 360px;
+    .flexFooter{
+        padding: 100px 40px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .madeUp {
+        width: 103px;
+        background-color: red;
+        color: white;
+        padding: 5px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    .margintop{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 997px) {
+
+.testimonialRow {
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    display: block;
+}
+.reachUsImg{
+    img{
+        object-fit: cover;
+    }
+    .info{
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 10px;
+        text-align: center;
+    }
+    .newsLetter{
+        font-size: 10px;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    input{
+        top: 44%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 130px;
+        height: 20px;
+    }
+    .redBtn{
+        top: 52%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        height: 22px;
+        font-size: 10px;
+        text-align: center;
+    }
+}
+.footer{
+    height: max-content;
+    .flexFooter{
+        display: block;
+        padding: 50px 40px;
+        text-align: center;
+    }
+}
+}
