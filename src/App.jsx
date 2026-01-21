@@ -119,7 +119,8 @@ function App() {
                 handleOpenProfile={handleOpenProfile}
                 openMenuHandler={openMenuHandler}
               />
-              <TestPage />
+              <TestPage
+                onAddItemToCart={handleAddItemToCart} />
             </>
           }
         />
