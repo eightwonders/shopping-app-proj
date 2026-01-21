@@ -5,7 +5,7 @@ import { DUMMY_PRODUCTS } from './dummy-products';
 import Layout from './components/HeaderLayout/Layout';
 import { ToastContainer, toast } from 'react-toastify';
 import Shop from './components/Homepage/Shop';
-
+import { TestPage } from './components/DummyDevPage/TestPage';
 
 function App() {
   const [shoppingCart, setShoppingCart] = useState({ items: [] });
@@ -62,6 +62,9 @@ function App() {
   function handleOpenProfile() {
     navigate('/Home/Profile');
   }
+  const clickHeaderTestPageHandler = (e) => {
+    navigate(`/Home/TestPage`);
+  }
   
   // useEffect(() => {
   //   console.log("openMobileMenu changed:", openMobileMenu);
@@ -96,6 +99,7 @@ function App() {
               <Shop
                 onAddItemToCart={handleAddItemToCart}
                 openMobileMenu={openMobileMenu}
+                clickHeaderTestPageHandler={clickHeaderTestPageHandler}
                 setOpenMobileMenu={setOpenMobileMenu}
               />
             }
@@ -105,6 +109,20 @@ function App() {
             element={<MyProfile shoppingCart={shoppingCart} />}
           />
         </Route>
+        <Route
+          path="Home/TestPage"
+          element={
+            <>
+              <Layout
+                cart={shoppingCart}
+                onUpdateCartItemQuantity={handleUpdateCartItemQuantity}
+                handleOpenProfile={handleOpenProfile}
+                openMenuHandler={openMenuHandler}
+              />
+              <TestPage />
+            </>
+          }
+        />
       </Routes>
       <ToastContainer position="top-right" autoClose={3000} />
     </>

@@ -1,0 +1,15 @@
+.testPageOutlook {
+    position: relative;
+    padding: 0rem 4rem 0rem 4rem;
+    .imgOrder{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        img {
+            width: 50%;
+            height: 550px;
+            margin: 0 5px;
+            
+        }
+    }
+}

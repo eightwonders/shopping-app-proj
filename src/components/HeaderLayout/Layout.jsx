@@ -5,7 +5,7 @@ import MobileHeader from '../Mobile/Header/MobileHeader';
 import { useMediaQuery } from 'react-responsive';
 
 export default function Layout(
-  { cart, onUpdateCartItemQuantity, handleOpenProfile, openMenuHandler }
+  { cart, onUpdateCartItemQuantity, handleOpenProfile, openMenuHandler, clickHeaderTestPageHandler  }
 ) {
   const isMobile = useMediaQuery({ query: '(max-width: 997px)' });
     return (
@@ -15,12 +15,14 @@ export default function Layout(
             cart={cart}
             onUpdateCartItemQuantity={onUpdateCartItemQuantity}
             openMenuHandler={openMenuHandler}
+            clickHeaderTestPageHandler={clickHeaderTestPageHandler}
           />
         ) : (
           <Header
             cart={cart}
             onUpdateCartItemQuantity={onUpdateCartItemQuantity}
             handleOpenProfile={handleOpenProfile}
+            clickHeaderTestPageHandler={clickHeaderTestPageHandler}
           />
         )}
         <Outlet />

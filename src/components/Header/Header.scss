@@ -2,6 +2,7 @@
     width: 10rem;
     background-color: red;
     justify-content: center;
+    cursor: pointer;
 }
 a {
     text-decoration: none;
@@ -93,6 +94,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
+        cursor: pointer;
     }
 }
 .middleRow{
@@ -209,15 +211,15 @@ a {
     display: flex;
     justify-content: end;
     img {
-        width: 15%;
-        height: 15%;
+        width: 8%;
+        height: 8%;
         margin-right: 20px;
     }
     .cartContainer{
         cursor: pointer;
         position: relative;
         display: inline-block;
-        width: 18%;
+        width: 8%;
         margin-right: 20px;
         .cart-count {
             position: absolute;

@@ -7,7 +7,7 @@ import SearchIcon from '../../assets/search.png';
 import Cart from '../../assets/cart.png';
 import Profile from '../../assets/user.png';
 
-export default function Header({ cart, onUpdateCartItemQuantity, handleOpenProfile }) {
+export default function Header({ cart, onUpdateCartItemQuantity, handleOpenProfile, clickHeaderTestPageHandler }) {
   const modal = useRef();
   const navigate = useNavigate();
   const cartQuantity = cart.items.length;

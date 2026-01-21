@@ -9,7 +9,7 @@ import Subscribe from './Subscribe.jsx';
 import SidebarMenu from '../Mobile/Header/SidebarMenu.jsx'
 
 export default function Shop({ 
-  onAddItemToCart, openMobileMenu, setOpenMobileMenu
+  onAddItemToCart, openMobileMenu, setOpenMobileMenu, clickHeaderTestPageHandler
 }) {
 
   return (
@@ -27,7 +27,7 @@ export default function Shop({
           {"for men who "}
           <div className="imgInsideRed">&nbsp;{"aspire"}</div>
         </div>
-        <div className="collections">{"BROWSE COLLECTIONS"}</div>
+        <div className="collections" onClick={(e) => clickHeaderTestPageHandler(e)}>{"BROWSE COLLECTIONS"}</div>
       </div>
       <MidSection onAddToCart={onAddItemToCart} />
       <h2 className="latestCollection">Latest Collections</h2>
