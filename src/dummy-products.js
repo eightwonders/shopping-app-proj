@@ -5,32 +5,32 @@ export const DUMMY_PRODUCTS = [
   {
     id: 'p1#12345678',
     image: denim,
-    title: 'Printed Polo T-shirt',
+    title: 'Denim Pant-Blue',
     price: 1499.00,
   },
   {
     id: 'p2#12345678',
     image: coolersGuy,
-    title: 'Printed Polo T-shirt',
+    title: 'Printed Polo T-shirt White',
     price: 1499.00,
   },
 
   {
     id: 'p3#12345678',
     image: denim,
-    title: 'Printed Polo T-shirt',
+    title: 'Denim Pant-Dark Wash',
     price: 1499.00,
   },
   {
     id: 'p4#12345678',
     image: coolersGuy,
-    title: 'Printed Polo T-shirt',
+    title: 'Printed Polo T-shirt Grey',
     price: 1499.00,
     },
     {
     id: 'p5#12345678',
     image: denim,
-    title: 'Printed Polo T-shirt',
+    title: 'Denim Pant-Ripped',
     price: 1499.00,
     }
 ];
