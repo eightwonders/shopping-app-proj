@@ -5,7 +5,7 @@ import Product from '../Homepage/Product';
 
 export const TestPage = ({ onAddItemToCart }) => {
 
-    return (
+    return ( 
       <div className="testPageOutlook">
         <h2 className="latestCollection">Latest Collections</h2>
         <ul id="products" className="rowSize">
